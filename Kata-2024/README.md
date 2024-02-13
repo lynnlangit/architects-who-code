@@ -17,10 +17,11 @@ Architectural Kata activity - Feb/Mar 2024.
    - Part Two: Produce a **Structural Design**, skaffolding which can be implemented - given the business/domain problem - Key Idea - 'create an architecture'
        - Part Two-a: `create a logical architecture` - create the initial core **components**. Tip: Use noun/verb names (use DDD)
          - Old way: Assign user stories, Anaylyze roles/responsibilities, Analyze characteristics (`bilities)
-         - New way: Workflow approach --> create x, find y, sign z, watch aa, place bb, then `personify`, i.e. 'who should do each of these things?`
-         - New way: Event-Storming --> actor/action approach, i.e. who: bidder, does what: views live video stream, views live bid stream; auctioneer, does what; system: does what?
+         - New way: **Workflow approach** --> create x, find y, sign z, watch aa, place bb, then `personify`, i.e. 'who should do each of these things?`
+         - New way: **Event-Storming** --> actor/action approach, i.e. who: bidder, does what: views live video stream, views live bid stream; auctioneer, does what; system: does what?
          - Next: Careful choose names and determine object boundaries based on `bilities
        - Part Two-b: `create a physical architecture` - update architecture based on implementation design to design **services** from components
+         - Example: Microservices / event-driven architecture
 
 ## Problem Statement
 - preamble
