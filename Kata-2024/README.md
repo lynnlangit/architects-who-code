@@ -19,7 +19,8 @@ Architectural Kata activity - Feb/Mar 2024.
          - Old way: Assign user stories, Anaylyze roles/responsibilities, Analyze characteristics (`bilities)
          - New way: Workflow approach --> create x, find y, sign z, watch aa, place bb, then `personify`, i.e. 'who should do each of these things?`
          - New way: Event-Storming --> actor/action approach, i.e. who: bidder, does what: views live video stream, views live bid stream; auctioneer, does what; system: does what?
-       - Part Two-b: `create a physical architecture`
+         - Next: Careful choose names and determine object boundaries based on `bilities
+       - Part Two-b: `create a physical architecture` - update architecture based on implementation design
 
 ## Problem Statement
 - preamble
