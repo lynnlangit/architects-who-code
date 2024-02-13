@@ -22,7 +22,21 @@ Architectural Kata activity - Feb/Mar 2024.
          - Next: Careful choose names and determine object boundaries based on `bilities
        - Part Two-b: `create a physical architecture` - update architecture based on implementation design to design **services** from components
          - Example: Microservices / event-driven architecture
-
+         
+## Judges Criteria
+- Process
+  - Pick top 10: semi-finals, then each team can update and create a 5 min video
+  - Pick top 3: winners
+  
+ 1. Clarity of narrative;
+   - tell a story, follow narrative arch, intro problem, share complication, peak/solution, resolution
+     - prelude, vision, final video, biz require, strategy, arch, sequence diagrams, ADRs (architecture decision records)
+     - requirements, architecture, ADRs
+     - overview, vision, goals, use cases, arch char, design contraints, high/mid arch, milestones, ADRs
+  2. Completeness of Solution
+    - can a solution be built based on what is provided
+  3. ID of Arch Characteristics
+   - scope / justification (use Architecture Char & Styles Worksheets)
 ## Problem Statement
 - preamble
 - users
