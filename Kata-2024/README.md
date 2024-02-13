@@ -18,6 +18,7 @@ Architectural Kata activity - Feb/Mar 2024.
       - Key Idea - 'create an architecture'
         - Part Two-a: `create a logical architecture` - create the core components
           - Initial component, Assign user stories, Anaylyze roles/responsibilities, Analyze characteristics (`bilities)
+          - Example: workflow approach --> create x, find y, sign z, watch aa, place bb, then `personify`, i.e. 'who should do each of these things?`
         - Part Two-b: `create a physical architecture`
 
 ## Problem Statement
