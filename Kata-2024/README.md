@@ -23,9 +23,9 @@ Architectural Kata activity - Feb/Mar 2024.
 
 
 ## Learning Resources
-- Expert Playlist
+- Expert O'Reilly Playlist - `...book(s)` by Sam Newman
 - `Learning Systems Thinking` by Diana Montalion
 - `Communication Patterns` by Jacqui Read
 - `....new course` by Jacqui Raed
-- `....book(s)` by Neal Ford
+- `....book(s)` by Neal Ford & Mark Richardson
 - 
