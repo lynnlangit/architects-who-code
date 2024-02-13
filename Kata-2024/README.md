@@ -40,12 +40,24 @@ Process: Pick top 10: semi-finals, then each team can update and create a 5 min 
        - format - single page - one decion per file (title, status "accepted", context, decision, consequences)
        - scope - can be broad or narrow, details matter  
    6. Overall Solution - is the solution feasible, can we see the style in the solution
+   7. 5-min Video (if in semifinals)
 
 ## Problem Statement
-- preamble
+- preamble - `MonitorMe` w/two existing products `MonitorThem` and `MyMedicalData` --> build new "MonitorMe" from 8 systems
 - users
-- requirements
+ - 500 patients
+ - ??? doctors, nurses
+ - any other users - auditors, non-medical
+- requirements ACCURACY is extremely important, SECURE but not HIPPA / GDPR
+  - Live - 8 devices (devices from every 500ms to once per hour), 1 sec, dashboard, 20 nurses
+  - Store/Retrieve - 24 hours
+  - Alert - via thresholds and trends (i.e. awake/asleeep)
+  - Notify - push to mobile & monitors (Doctors on phones, Nurses to dashboards) - always on (HA if any of 8 devices fails, keep going with others)
+  - Snapshots - gen on demand and upload to MyMedicalData (use REST call / secure cloud)
 - additonal context
+  - deploy on premise, must interact with SaaS cloud-based to send data
+  - platform, data stores and databases we will design
+  - must be expandable for more devices in the future
 
 
 ## Learning Resources
