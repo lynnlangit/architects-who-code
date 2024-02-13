@@ -8,7 +8,7 @@ Architectural Kata activity - Feb/Mar 2024.
 - AI Parners - Gemini Advanced + ChatGPT
 
 ## Process Definition and Outputs
-- Goal: Produce Architectural Design - not code - two processes are required
+- Goal: Produce Architectural Design - not code - two processes are required. **DUE Feb 22.**
  
   - Part One: Produce **Architectural Characteristics List**, `bilities` - behavior of the system
     - **Operational/DevOps** - performance, reliability, security, scalability, elasticity, deployability - match `bilities to requirements
@@ -34,30 +34,42 @@ Process: Pick top 10: semi-finals, then each team can update and create a 5 min 
     - can a solution be built based on what is provided
    3. ID of Arch Characteristics
      - scope / justification (use Architecture Char & Styles Worksheets)
-   4. **Diagrams** - use correctly! i.e. Sequence, etc...
+   4. **Diagrams** - use correctly! i.e. Sequence, etc... TIP: Use color as a dimension
      - several types of diagrams, name and scope
-   5. **ADRs** - from book `Fundamentals of Software Architecture` book
+     - component, context, user journey, sequence, system, deployment, UI mockups 
+   6. **ADRs** - from book `Fundamentals of Software Architecture` book
        - format - single page - one decion per file (title, status "accepted", context, decision, consequences)
        - scope - can be broad or narrow, details matter  
-   6. Overall Solution - is the solution feasible, can we see the style in the solution
-   7. 5-min Video (if in semifinals)
+   7. Overall Solution - is the solution feasible, can we see the style in the solution
+   8. 5-min Video (if in semifinals)
 
 ## Problem Statement
-- preamble - `MonitorMe` w/two existing products `MonitorThem` and `MyMedicalData` --> build new "MonitorMe" from 8 systems
+- preamble - `MonitorMe` w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` --> build new "MonitorMe" from 8 systems (monitor, record, analyze, alert)
 - users
- - 500 patients
+ - 500 patients max per instance
  - ??? doctors, nurses
  - any other users - auditors, non-medical
 - requirements ACCURACY is extremely important, SECURE but not HIPPA / GDPR
-  - Live - 8 devices (devices from every 500ms to once per hour), 1 sec, dashboard, 20 nurses
-  - Store/Retrieve - 24 hours
-  - Alert - via thresholds and trends (i.e. awake/asleeep)
-  - Notify - push to mobile & monitors (Doctors on phones, Nurses to dashboards) - always on (HA if any of 8 devices fails, keep going with others)
-  - Snapshots - gen on demand and upload to MyMedicalData (use REST call / secure cloud)
+  - Live (Devices) - 8 devices (devices from every 500ms to once per hour), av/response time 1 sec, dashboard, 20 patients per nurse station max, rotates between patients every 5 seconds. Device type and transmit rate shown below.
+    - Heart Rate - 500 milliseconds
+    - Blood Pressure - 1 hour
+    - Oxygen Level - 5 seconds
+    - Blood Sugar - 2 minutes
+    - Respiration Rate - 1 second
+    - Electrocariogram (ECG) - 1 second
+    - Body Temperature - 5 minutes
+    - Sleep Status (sleeping or awake) - 2 minutes
+  - Store/Retrieve - 24 hours history, filter on time / vital sign
+  - Alert/Notify - via issue, thresholds (including calculated for awake or asleeep), push to mobile & monitors (Doctors on phones, Nurses to dashboards)
+  - Always on (HA if any of 8 devices fails, keep going with others)
+  - Snapshots - gen on demand and upload to `MyMedicalData` (uses secure HTTP API call / secure cloud)
 - additonal context
-  - deploy on premise, must interact with SaaS cloud-based to send data
-  - platform, data stores and databases we will design
+  - deploy on premise, must interact with SaaS cloud-based to send data (based in California) - will be installed in EACH hospital
+  - platform, data stores and databases we will design SOFTWARE and HARDWARE complete system design
   - must be expandable for more devices in the future
+  - data accuracy is vital - literally
+  - new market - expect change
+  - secure data - but not HIPPA or GDPR...
 
 
 ## Learning Resources
