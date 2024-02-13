@@ -26,29 +26,28 @@ Architectural Kata activity - Feb/Mar 2024.
 ## Judges Criteria
 Process: Pick top 10: semi-finals, then each team can update and create a 5 min video, then Pick top 3: winners  
   
- 1. Clarity of narrative; tell a story, follow narrative arch, intro problem, share complication, peak/solution, resolution
+ 1. Narrative; tell a story, follow narrative arch, intro problem, share complication, peak/solution, resolution
      - prelude, vision, final video, biz require, strategy, arch, sequence diagrams, ADRs (architecture decision records)
      - requirements, architecture, ADRs
      - overview, vision, goals, use cases, arch char, design contraints, high/mid arch, milestones, ADRs
-  2. Completeness of Solution
-    - can a solution be built based on what is provided
-   3. ID of Arch Characteristics
+  2. ID of Arch Characteristics
      - scope / justification (use Architecture Char & Styles Worksheets)
-   4. **Diagrams** - use correctly! i.e. Sequence, etc... TIP: Use color as a dimension
+  3. **Diagrams** - use correctly! i.e. Sequence, etc... TIP: Use color as a dimension
      - several types of diagrams, name and scope
      - component, context, user journey, sequence, system, deployment, UI mockups 
-   6. **ADRs** - from book `Fundamentals of Software Architecture` book
+  4. **ADRs** - from book `Fundamentals of Software Architecture` book
        - format - single page - one decion per file (title, status "accepted", context, decision, consequences)
        - scope - can be broad or narrow, details matter  
-   7. Overall Solution - is the solution feasible, can we see the style in the solution
-   8. 5-min Video (if in semifinals)
+  5. Overall Solution - is the solution feasible, can we see the style in the solution?
+  6. 5-min Video (if in semifinals)
 
 ## Problem Statement
-- preamble - `MonitorMe` w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` --> build new "MonitorMe" from 8 systems (monitor, record, analyze, alert)
+- GOAL: Design `MonitorMe` app to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
+  - use inputfrom 8 devices (monitor, record, analyze, alert)
 - users
- - 500 patients max per instance
- - ??? doctors, nurses
- - any other users - auditors, non-medical
+  - 500 patients max per instance
+  - ??? doctors, nurses
+  - any other users - auditors, non-medical
 - requirements ACCURACY is extremely important, SECURE but not HIPPA / GDPR
   - Live (Devices) - 8 devices (devices from every 500ms to once per hour), av/response time 1 sec, dashboard, 20 patients per nurse station max, rotates between patients every 5 seconds. Device type and transmit rate shown below.
     - Heart Rate - 500 milliseconds
