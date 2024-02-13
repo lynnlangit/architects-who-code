@@ -20,3 +20,12 @@ Architectural Kata activity - Feb/Mar 2024.
 - users
 - requirements
 - additonal context
+
+
+## Learning Resources
+- Expert Playlist
+- `Learning Systems Thinking` by Diana Montalion
+- `Communication Patterns` by Jacqui Read
+- `....new course` by Jacqui Raed
+- `....book(s)` by Neal Ford
+- 
