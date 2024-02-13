@@ -38,7 +38,9 @@ Process: Pick top 10: semi-finals, then each team can update and create a 5 min 
      - several types of diagrams, name and scope
    5. **ADRs** - from book `Fundamentals of Software Architecture` book
        - format - single page - one decion per file (title, status "accepted", context, decision, consequences)
-       - scope - can be broad or narrow, details matter
+       - scope - can be broad or narrow, details matter  
+    6. Overall Solution - is the solution feasible, can we see the style in the solution
+
 ## Problem Statement
 - preamble
 - users
