@@ -24,19 +24,20 @@ Architectural Kata activity - Feb/Mar 2024.
          - Example: Microservices / event-driven architecture
          
 ## Judges Criteria
-- Process
-  - Pick top 10: semi-finals, then each team can update and create a 5 min video
-  - Pick top 3: winners
+Process: Pick top 10: semi-finals, then each team can update and create a 5 min video, then Pick top 3: winners  
   
- 1. Clarity of narrative;
-   - tell a story, follow narrative arch, intro problem, share complication, peak/solution, resolution
+ 1. Clarity of narrative; tell a story, follow narrative arch, intro problem, share complication, peak/solution, resolution
      - prelude, vision, final video, biz require, strategy, arch, sequence diagrams, ADRs (architecture decision records)
      - requirements, architecture, ADRs
      - overview, vision, goals, use cases, arch char, design contraints, high/mid arch, milestones, ADRs
   2. Completeness of Solution
     - can a solution be built based on what is provided
-  3. ID of Arch Characteristics
-   - scope / justification (use Architecture Char & Styles Worksheets)
+   3. ID of Arch Characteristics
+     - scope / justification (use Architecture Char & Styles Worksheets)
+   4. **Diagrams** - use correctly! i.e. Sequence, etc...
+     - several types of diagrams, name and scope
+   5. **ADRs** - from book `Fundamentals of Software Architecture` book
+       - format - single page - one decion per file (title, status "accepted", context, decision, consequences)
 ## Problem Statement
 - preamble
 - users
@@ -50,4 +51,9 @@ Architectural Kata activity - Feb/Mar 2024.
 - `Communication Patterns` by Jacqui Read
 - `....new course` by Jacqui Raed
 - `....book(s)` by Neal Ford & Mark Richardson
-- 
+
+- Previous Winners
+- https://github.com/miyagis-forests/farmacy-food-kata
+- https://github.com/ldynia/archcolider
+- https://github.com/TheJedis2020/arch_katas_2020
+- https://github.com/lookfwd/archkata
