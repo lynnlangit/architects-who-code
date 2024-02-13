@@ -79,7 +79,7 @@ Process: Pick top 10: semi-finals, then each team can update and create a 5 min 
 - `....new course` by Jacqui Raed
 - `....book(s)` by Neal Ford & Mark Richardson
 
-- Previous Winners
+### Previous Winners
 - https://github.com/miyagis-forests/farmacy-food-kata
 - https://github.com/ldynia/archcolider
 - https://github.com/TheJedis2020/arch_katas_2020
