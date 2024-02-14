@@ -1,5 +1,7 @@
 # Info about Devices
 
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/patient-devices.png" width=800>
+
 ## List of Medical-Grade Devices
 
 1. Heart Rate Monitor
