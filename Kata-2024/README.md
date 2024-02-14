@@ -4,12 +4,11 @@ Architectural Kata activity - Feb/Mar 2024.
 
 ## Problem Statement
 - GOAL: Design `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
-  - display current hospital patient information input from 8 devices (monitor, record, analyze, alert) for nurses and doctors
-- users
-  - 500 patients max per instance, 20 patients per nuse
-  - ??? doctors, nurses
-  - any other users - auditors, non-medical, IT (support)
-- requirements ACCURACY is extremely important, SECURE but not HIPPA / GDPR
+  - display current hospital patient information input from 8 devices (monitor, record, analyze, alert) for max 500 patients per installation
+  - create dashboard for nurses, create alerts for doctors, create alerts for IT
+- REQUIREMENTS:
+  - ACCURACY is extremely important
+  - SECURE but not HIPPA / GDPR
   - Live (Devices) - 8 devices (devices from every 500ms to once per hour), av/response time 1 sec, dashboard, 20 patients per nurse station max, rotates between patients every 5 seconds. Device type and transmit rate shown below.
     - Heart Rate - 500 milliseconds
     - Blood Pressure - 1 hour
