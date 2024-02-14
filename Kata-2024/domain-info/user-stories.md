@@ -10,4 +10,4 @@
 
 ## IT / System Maintainers
 
-
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/users-it.png" width=800>
