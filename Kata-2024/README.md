@@ -2,12 +2,9 @@
 
 Architectural Kata activity - Feb/Mar 2024.
 
-
-
-
 ## Problem Statement
-- GOAL: Design `MonitorMe` app to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
-  - use inputfrom 8 devices (monitor, record, analyze, alert)
+- GOAL: Design `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
+  - display current hospital patient information input from 8 devices (monitor, record, analyze, alert) for nurses and doctors
 - users
   - 500 patients max per instance, 20 patients per nuse
   - ??? doctors, nurses
@@ -33,6 +30,13 @@ Architectural Kata activity - Feb/Mar 2024.
   - data accuracy is vital - literally
   - new market - expect change
   - secure data - but not HIPPA or GDPR...
+ 
+## Solution Design
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=800>
+
+- SOLUTION: Visual Dashboard (concept shown above) for nurses and also alert system for doctors.
+  - Integrate with current existing systems 
 
 ## Team
 
