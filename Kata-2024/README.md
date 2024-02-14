@@ -25,17 +25,9 @@ Architectural Kata activity - Feb/Mar 2024.
 - SOLUTION: Visual Dashboard (concept shown above) for nurses and also alert system for doctors.
   - Shows monitoring info per patient (max 20 per nurse), info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices
   - Integrate with current existing systems
-    - current in-room patient devices and monitor display
+    - current in-room patient devices and individual patient monitor display
       - Live (Devices) - 8 devices (devices from every 500ms to once per hour), av/response time 1 sec, dashboard, 20 patients per nurse station max, rotates between patients every 5 seconds. Device type and transmit rate shown below.
-      - Heart Rate - 500 milliseconds
-      - Blood Pressure - 1 hour
-      - Oxygen Level - 5 seconds
-      - Blood Sugar - 2 minutes
-      - Respiration Rate - 1 second
-      - Electrocariogram (ECG) - 1 second
-      - Body Temperature - 5 minutes
-      - Sleep Status (sleeping or awake) - 2 minutes
-    - current SaaS-based data services
+        - Array of devices/montior rates to include: {Heart Rate - 500 milliseconds, BP - 1 hour, O2 - 5 seconds, Blood Sugar - 2 minutes, Respiration Rate - 1 second, ECG - 1 second, Temp - 5 minutes, Sleep Status (sleeping or awake) - 2 minutes}
    
 ### Solution Components
 
