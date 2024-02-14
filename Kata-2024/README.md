@@ -30,11 +30,13 @@ Architectural Kata activity - Feb/Mar 2024.
   - PART ONE: Visual Dashboard (concept shown above) for nurses 
     - Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard       
   - PART TWO: Alert Systems for Doctors and IT Professionals
-    - Alerts on defined/customizable patient device thresholds to doctors mobile phone
+    - Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
     - Alerts on dashboard application downtime to IT pro's mobile phone
   - PART THREE: Integration Applications
     - Integrator w/Patient Record, then PUSH to external API 1
     - Integrator w/Aggregate Event Data, then PUSH to external API 2
+   
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=600>
    
 ### Solution Components
 
