@@ -22,3 +22,4 @@
     - Siemens Healthineers offers a variety of patient monitoring systems that are known for their precision and ease of integration with other hospital systems.
     - Their monitors are used in critical care, anesthesia, and general ward settings.
     - Features often include advanced algorithms for accurate readings, user-friendly interfaces, and seamless data transfer capabilities.
+    - Often integrated with Medtronic monitoring devices.
