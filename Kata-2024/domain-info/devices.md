@@ -1,8 +1,8 @@
 # Info about Devices
 
 Aggregate Nurse Dashboard to collect/display/alert on subset of possible in-room patient devices.  
-Subset devices named, with required measurement interval and data types collected shown below.  
-In-room patient dashboard shown below as well.  
+Required subset of patient devices are shown, with required measurement interval and data types collected shown below.  
+In-room patient dashboard shown below as well.  Note: Devices are physically connected to in-room patient dashboard.  
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/patient-devices.png" width=1000>
 
