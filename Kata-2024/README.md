@@ -26,17 +26,20 @@ Architectural Kata activity - Feb/Mar 2024.
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
 
-- SOLUTION: Visual Dashboard (concept shown above) for nurses and also alert system for doctors.
-  - Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices
-  - Integrate with current existing systems
-    - current in-room patient devices and individual patient monitor display
-      - Live (Devices) - 8 devices (devices from every 500ms to once per hour), av/response time 1 sec, dashboard, 20 patients per nurse station max, rotates between patients every 5 seconds. Device type and transmit rate shown below.
-        - Array of devices/montior rates to include: {Heart Rate - 500 milliseconds, BP - 1 hour, O2 - 5 seconds, Blood Sugar - 2 minutes, Respiration Rate - 1 second, ECG - 1 second, Temp - 5 minutes, Sleep Status (sleeping or awake) - 2 minutes}
-        - Process to capture --> (monitor, record, analyze, alert)
+- SOLUTION APPLICATIONS
+  - PART ONE: Visual Dashboard (concept shown above) for nurses 
+    - Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard       
+  - PART TWO: Alert Systems for Doctors and IT Professionals
+    - Alerts on defined/customizable patient device thresholds to doctors mobile phone
+    - Alerts on dashboard application downtime to IT pro's mobile phone
+  - PART THREE: Integration Applications
+    - Integrator w/Patient Record, then PUSH to external API 1
+    - Integrator w/Aggregate Event Data, then PUSH to external API 2
    
 ### Solution Components
 
 Components shown in GREEN current exist, those shown in RED will be built for the `MonitorMe` application.
+ - Process to capture --> (monitor, record, analyze, viz and/or alert)
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
 
