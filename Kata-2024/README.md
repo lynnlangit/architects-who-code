@@ -20,7 +20,7 @@ Architectural Kata activity - Feb/Mar 2024.
  
 ## Solution Design
 
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=800>
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
 
 - SOLUTION: Visual Dashboard (concept shown above) for nurses and also alert system for doctors.
   - Shows monitoring info per patient (max 20 per nurse), info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices
@@ -35,9 +35,15 @@ Architectural Kata activity - Feb/Mar 2024.
       - Electrocariogram (ECG) - 1 second
       - Body Temperature - 5 minutes
       - Sleep Status (sleeping or awake) - 2 minutes
-    - current SaaS-based data services 
+    - current SaaS-based data services
+   
+### Solution Components
 
-## Team
+Components shown in GREEN current exist, those shown in RED will be built for the `MonitorMe` application.
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
+
+### Team
 
 - David Haley - https://www.linkedin.com/in/davidchaley/
 - AI Parners - Gemini Advanced + ChatGPT
