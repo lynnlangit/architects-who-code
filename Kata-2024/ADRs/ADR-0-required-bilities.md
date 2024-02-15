@@ -30,13 +30,13 @@ There are 3 applications in this solution.  Building applications that can grow 
 
 #### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
-- Availability - redunandcy
+- Availability - redunandcy, system must failover and minimize downtown
 - Performance - HOT data, extremely low latency
-- Security
+- Security - medical data requires end-to-end security
 #### B Priority
-- Scalability
-- Elasticity
-- Deployability
+- Scalability - Max 500 beds per installation, defined workload.  2% of US Hospitals w/ more than 500 beds will require multiple system installs.
+- Elasticity - workload is relatively stable, not spikey.
+- Deployability - deployment will be a one-time event, with some updates.
 
 ---
 
@@ -44,14 +44,14 @@ There are 3 applications in this solution.  Building applications that can grow 
 
 #### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
-- Security - to/from cloud
-- Availability - redunandcy
+- Security - to/from cloud - medical data to/from internet requires secure transfer patterns (VPN tunnel, authentication, data encryption...)
+- Availability - redunandcy - needs redundancy to be highly available, with automatic failover
 
 #### B Priority
 - Performance - WARM data, 24 hour latency
-- Scalability
-- Elasticity
-- Deployability
+- Scalability - predicatble workload
+- Elasticity - predictable workload
+- Deployability - components will be deployed as be a one-time event, with minimal updates.
 
 ----
 
