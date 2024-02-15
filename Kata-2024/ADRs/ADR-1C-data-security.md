@@ -23,3 +23,7 @@ In order to secure data both at at rest and in transit, we need a comprehensive 
 - The cost of setting up and maintaining a dedicated patient information network (in addition to the regular hosptial network for non-patient information) must be included in the budget.
 - The cost of setting up an internal cerificate authority service to issue keys (KMS) must be included in the budget.  Encryption key rotation policies must be designed, performed and enforced via Organizational policy.
 - We may chose to pay for a commercial event database (Aerospike) vs open source (Redis) as the former includes encryption at rest by default.  For the latter there is significant technical work needed to set up and maintain this capability.
+
+## Considerations:
+- Most hospitals do have internal user/service directory systems (i.e. Active Directory, ...)
+- Most hospitals do NOT have KMS infrastructure/servers.
