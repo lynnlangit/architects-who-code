@@ -50,6 +50,17 @@ Components shown in GREEN currently exist, those shown in RED will be built for 
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
 
+<details><summary>ADRs</summary>
+    List of related ADRs and links to documents.
+    - [ADR0:GENERAL - Restate Requirements and match Solutions characteristics (or `bilities)](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-0-required-bilities.md)
+    - [ADR1A:DATA - Forecast data volume and consider database types for data volume and types](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-1A-data-volumes.md)
+    - [ADR1B:DATA - Plan uptime SLO and consider database types and features for data availability](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-1B-data-availability.md)
+    - [ADR1C:DATA - Review security baseline and consider database types and features for data security](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-1C-data-security.md)
+    - [ADR2A:SERVICES - Review component baseline and consider service design pattern options](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-2A-services-design.md)
+    - [ADR2B:SERVICES - Review component availability and consider service design pattern options](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-2B-services-availability.md)
+    - [ADR3A:ENVIRONMENT - Review dev environment and team capabilties and consider language, tools and patterns](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-3A-dev-env.md)
+</details>
+
 ----
 
 ### Team
