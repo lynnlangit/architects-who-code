@@ -66,7 +66,7 @@ Components shown in GREEN currently exist, those shown in RED will be built for 
 ### Team
 
 - David Haley - https://www.linkedin.com/in/davidchaley/
-- AI Parners - Gemini Advanced + ChatGPT
+- AI Partners - Gemini Advanced + ChatGPT
 
 
 
