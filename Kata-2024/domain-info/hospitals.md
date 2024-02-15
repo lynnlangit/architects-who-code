@@ -2,7 +2,7 @@
 
 ## Stats
 
-- 6100 US Hospitals
+- 6,100 US Hospitals
 - Average beds/hosptial is 130
 - 2% (122) have over 500 beds
 
