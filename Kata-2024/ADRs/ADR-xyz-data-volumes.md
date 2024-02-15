@@ -1,6 +1,6 @@
 # XYZ / Data volumes
 
-WIP determining data volume. Will use to figure out hardware/storage constraints/requirements
+WIP determining data volume and storage. Will use to figure out hardware/storage constraints/requirements.
 
 Current estimation: ![estimated data volumes](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/2024-Kata-data-volumes.png)
 
