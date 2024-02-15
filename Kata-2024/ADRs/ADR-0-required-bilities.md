@@ -23,9 +23,10 @@ Given solution requirements captured from the scenario provided, shown below.
   - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
 
 ## Decision
-`Bility prioritization based on stated requirements by application.  There are 3 applications in this solution.  
+`Bility prioritization based on stated requirements by application.    
+There are 3 applications in this solution.  Building applications that can grow flexibly is also a requirement.  
 
-### 1. For Nurse's Dashboard / Alert System for Doctors & IT
+### Applications 1 & 2. For Nurse's Dashboard / Alert System for Doctors & IT
 
 #### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
@@ -39,7 +40,7 @@ Given solution requirements captured from the scenario provided, shown below.
 
 ---
 
-### 2.  Integration w/Saas & Snapshots
+### Application 3.  Integration w/Saas & Snapshots
 
 #### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
@@ -54,7 +55,7 @@ Given solution requirements captured from the scenario provided, shown below.
 
 ----
 
-###  3. Growth / Future Application Features
+### Other 4. Growth / Future Application Features
 
 #### A Priority
 - Accuracy / Reliability
