@@ -1,19 +1,20 @@
 # Information for O'Reilly Kata
 
-Architectural Kata activity - Feb/Mar 2024.
+Architectural Kata activity `MonitorMe` application - Feb/Mar 2024. 
 
-## Information about this Kata Challenge
-- PROBLEM STATEMENTS: Timely patient status is vital to providing highest quality care, gaps exist in the market.
-  - Nurses must be 'in-room' to gather patient monitoring information. Aggregate patient dashboards have latencies, inaccuracies or are non-existant.
-  - Doctors need to get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
-  - IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
+### CURRENT STATE/CHALLENGES: 
+Timely patient status is vital to providing highest quality care, **gaps exist** in the hospital market.  See `domain-info` folder.
+1. Nurses must be 'in-room' to gather patient monitoring information. Aggregate patient dashboards have latencies, inaccuracies or are non-existant.
+2. Doctors need to get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
+3. IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
     
-- GOAL: Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
-  - display current hospital patient information input from 8 patients devices for max 500 patients per installation 
-  - create patient information dashboards (per 20 patients max) per nurse
-  - create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
+### GOAL: 
+Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
+1. Display current hospital patient information input from 8 patients devices for max 500 patients per installation 
+2. Create patient information dashboards (per 20 patients max) per nurse
+3. Create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
     
-- REQUIREMENTS:
+### SOLUTION REQUIREMENTS:
   - ACCURATE is extremely important, vital!
   - SECURE data, but *NOT* HIPPA / GDPR
   - PERFORMANT - near real-time
