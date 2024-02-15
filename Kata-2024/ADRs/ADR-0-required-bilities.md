@@ -1,4 +1,4 @@
-# 0 Required `Bilities
+# 0 Solution Requirements & Capabiilities
 
 WIP capturing stated application requirements. Will use to select and map to application `bilities`
 
