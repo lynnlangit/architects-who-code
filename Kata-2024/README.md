@@ -51,6 +51,8 @@ Components shown in GREEN current exist, those shown in RED will be built for th
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
 
+----
+
 ### Team
 
 - David Haley - https://www.linkedin.com/in/davidchaley/
