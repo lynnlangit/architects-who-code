@@ -17,23 +17,27 @@ Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-
     
 ---
  
-## Solution Concept: Nurse's Patient Info Dashboard
+## Solution Concept 1: Nurse's Patient Info Dashboard
+
+SOLUTION ONE: Visual Dashboard (concept shown below) for nurses 
+- Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard     
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
 
-- SOLUTION APPLICATIONS
-  - PART ONE: Visual Dashboard (concept shown above) for nurses 
-    - Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard       
-  - PART TWO: Alert Systems for Doctors and IT Professionals
-    - Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
-    - Alerts on dashboard application downtime to IT pro's mobile phone
-  - PART THREE: Integration Applications
-    - Integrator w/Patient Record, then PUSH to external API 1
-    - Integrator w/Aggregate Event Data, then PUSH to external API 2
-
-## Solution Concept: Doctor's Patient Info Mobile Alerts
+## Solution Concept 2 : Doctor's Patient Info Mobile Alerts
    
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=600>
+SOLUTION TWO: Alert Systems for Doctors and IT Professionals  
+- Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
+- Alerts on dashboard application downtime to IT pro's mobile phone
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=500>
+
+## Solution Concept 3 : Integration with SaaS Applications
+SOLUTION THREE: Integration Applications
+- Integrator w/Patient Record, then PUSH to external API 1 `MyMedicalData`
+- Integrator w/Aggregate Event Data, then PUSH to external API 2 `MonitorThem`
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/connected.png" width=500>
 
 ----
    
