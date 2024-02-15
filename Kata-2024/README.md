@@ -10,21 +10,12 @@ Timely patient status is vital to providing highest quality care, **gaps exist**
     
 ### GOAL: 
 Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` and existing in-room patient devices / individual patient monitors.  
+Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/bilities.md#solution-requirements) and associated ranked solution capabilties.
 1. Display current hospital patient information input from 8 patients devices for max 500 patients per installation 
 2. Create patient information dashboards (per 20 patients max) per nurse with minimal latency
 3. Create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
     
-### SOLUTION REQUIREMENTS:
-  - ACCURATE data is extremely important, vital!
-  - SECURE data but *NOT* HIPPA / GDPR
-  - PERFORMANT near real-time, minimal latency
-  - AVAILABLE always on (HA if any of 8 devices fails, keep going with others)
-  - LOCAL install on premises, no cloud
-  - ALERTS notify - at thresholds & conditionals, push to mobile & monitors (Doctors on phones, Nurses to dashboards)
-  - QUERYABLE generate on-demand snapshots, filter on time/vital signs, keep 24 hr history
-  - FLEXIBLE built for easy extensibility - change, growth, new devices...
-  - COMPLETE serves and stores information, software and hardware solution
-  - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
+---
  
 ## Solution Concept: Nurse's Patient Info Dashboard
 
