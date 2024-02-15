@@ -2,7 +2,7 @@
 
 WIP determining data volume. Will use to figure out hardware/storage constraints/requirements
 
-Current estimation: ![estimated data volumes](2024-Kata-data-volumes.png)
+Current estimation: ![estimated data volumes](lynnlangit/architects-who-code/Kata-2024/images/2024-Kata-data-volumes.png)
 
 ## Status: 
 WIP
