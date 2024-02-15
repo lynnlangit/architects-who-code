@@ -15,7 +15,7 @@ Design new `MonitorMe` application to work with w/two existing cloud SaaS produc
 3. Create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
     
 ### SOLUTION REQUIREMENTS:
-  - ACCURATE is extremely important, vital!
+  - ACCURATE data is extremely important, vital!
   - SECURE data, but *NOT* HIPPA / GDPR
   - PERFORMANT - near real-time
   - AVAILABLE - Always on (HA if any of 8 devices fails, keep going with others)
