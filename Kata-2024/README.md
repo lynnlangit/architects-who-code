@@ -9,10 +9,10 @@ Hospital nurses and doctors need timely patient status in order to provide the h
    - Aggregate patient dashboards at nurse's stations have latencies, inaccuracies or are non-existant
    - 👨‍⚕️ [nurse user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#nurses)
 2. Doctors need to get **patient monitor status for abnormal states rapidly** via timely, relevant alerts.
-   - Abnormal rating alerts, when available, have excess latency and downtime
+   - Abnormal rating alerts, when available, have excess latency, downtime and aren't always focused on key patient metrics, resulting in alert fatigue.
    - 👩🏻‍⚕️ [doctor user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#doctors)
 3. IT needs to get **monitor down status notifications rapidly** via timely, relevant alerts.
-   - Downtime system alerts have excess latency and are unreliable
+   - Downtime system alerts have excess latency and are unreliable and aren't always focused on key system metrics, resulting in alert fatigue.
    - 🧑‍💻 [IT user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#it--system-maintainers)
     
 ### GOAL: 
