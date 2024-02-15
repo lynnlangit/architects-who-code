@@ -43,6 +43,8 @@ Design new `MonitorMe` application to work with w/two existing cloud SaaS produc
 ## Solution Concept: Doctor's Patient Info Mobile Alerts
    
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=600>
+
+----
    
 ### Solution Components
 
