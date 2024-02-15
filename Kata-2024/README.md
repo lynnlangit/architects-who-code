@@ -20,7 +20,8 @@ Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-
 ## Solution Concept 1: Nurse's Patient Info Dashboard
 
 SOLUTION ONE: Visual Dashboard (concept shown below) for nurses 
-- Shows monitoring info per patient, info changes to next patient every 5 seconds, shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard     
+- Shows monitoring info per patient, info changes to next patient every 5 seconds
+- Shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard     
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
 
