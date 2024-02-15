@@ -26,7 +26,7 @@ Design new `MonitorMe` application to work with w/two existing cloud SaaS produc
   - COMPLETE serves and stores information, software and hardware solution
   - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
  
-## Solution Design
+## Solution Design: Nurse's Patient Info Dashboard
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
 
