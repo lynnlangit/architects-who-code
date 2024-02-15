@@ -7,9 +7,12 @@ Architectural Kata activity - Feb/Mar 2024.
   - Nurses must be 'in-room' to gather patient monitoring information. Aggregate patient dashboards have latencies, inaccuracies or are non-existant.
   - Doctors need to get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
   - IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
-- GOAL: Design `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
-  - display current hospital patient information input from 8 devices for max 500 patients per installation
-  - create patient information dashboards (per 20 patients max) per nurse, create alerts for doctors, create alerts for IT
+    
+- GOAL: Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
+  - display current hospital patient information input from 8 patients devices for max 500 patients per installation 
+  - create patient information dashboards (per 20 patients max) per nurse
+  - create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
+    
 - REQUIREMENTS:
   - ACCURATE is extremely important, vital!
   - SECURE data, but *NOT* HIPPA / GDPR
