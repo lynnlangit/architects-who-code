@@ -3,8 +3,8 @@
 Architectural Kata activity `MonitorMe` application - Feb/Mar 2024. 
 
 ### CURRENT STATE/CHALLENGES: 
-Timely patient status is vital to providing highest quality care, **gaps exist** in the hospital market.  See `domain-info` folder.
-1. Nurses must be 'in-room' to gather patient monitoring information. Aggregate patient dashboards have latencies, inaccuracies or are non-existant.
+Timely patient status is vital to providing highest quality care, **gaps exist** in the [US hospital market](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/hospitals.md).  
+1. Nurses must be 'in-room' to gather patient monitoring information from [individual patient dashboards](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/devices.md). Aggregate patient dashboards at nurse's stations have latencies, inaccuracies or are non-existant.
 2. Doctors need to get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
 3. IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
     
