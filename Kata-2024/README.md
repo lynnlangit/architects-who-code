@@ -39,6 +39,8 @@ Design new `MonitorMe` application to work with w/two existing cloud SaaS produc
   - PART THREE: Integration Applications
     - Integrator w/Patient Record, then PUSH to external API 1
     - Integrator w/Aggregate Event Data, then PUSH to external API 2
+
+## Solution Concept: Doctor's Patient Info Mobile Alerts
    
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=600>
    
