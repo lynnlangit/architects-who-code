@@ -11,7 +11,7 @@ Nurses and Doctors need timely patient status to be able to provide the highest 
 2. Doctors need to get **patient monitor status for abnormal states rapidly** via timely, relevant alerts.
    - Abnormal rating alerts, when available, have excess latency and downtime
    - 👩🏻‍⚕️ [doctor user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#doctors)
-3. IT needs to get **monitor down status notifications rapidly**
+3. IT needs to get **monitor down status notifications rapidly** via timely, relevant alerts.
    - Downtime system alerts have excess latency and are unreliable
    - 🧑‍💻 [IT user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#it--system-maintainers)
     
