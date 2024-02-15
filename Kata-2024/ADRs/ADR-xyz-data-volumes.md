@@ -8,10 +8,15 @@ Current estimation: ![estimated data volumes](https://github.com/lynnlangit/arch
 WIP
 
 ## Context: 
-In order to scale delivery both at home and on the smart fridges, we need a delivery optimization and scheduling system.
+In order meet latency requirements, we need to use the fastest possible database as backing for our Dashboard application and associated Alert application.
+Our dev team has previously succesfully built applications on MySQL.  They do not have experience with event-based databases.
 
 ## Decision: 
-Otter will be used as a starting point for delivery optimization, on the basis of very quick integration, since it already supports Toast as part of its integrations. It also supports Uber Eats, Caviar and Postmates for ordering. Alternatives like OptimoRoute or Circuit can be employed when scale proves to be a problem.
+- Use event-based in-memory database for core applications to meet latency requirements
+- Test open-source (Redis) and commercial (Aerospike) event databases
+- Use relational database (MySQL) for intermediate storage and transformation before pushing to downstream databases (FIHR) and data services 
 
 ## Consequences: 
-The direct integration means that we have limited access and flexibility.
+- Add training time for using event databases for dev team to budget.
+- If open source events, we may spend excessive time setting up other required capabilities, i.e. failover clustering for high availability, snapshots, data encryption-at-rest, etc...
+- If commercial events, we must consider licence cost as a tradeoff to be able to implement required features (listed above) more quickly, easily and reliably
