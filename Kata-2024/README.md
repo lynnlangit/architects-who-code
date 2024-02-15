@@ -35,8 +35,8 @@ SOLUTION TWO: Alert Systems for Doctors and IT Professionals
 
 ## Solution Concept 3 : Integration with SaaS Applications
 SOLUTION THREE: Integration Applications
-- Integrator w/Patient Record, then PUSH to external API 1 `MyMedicalData`
-- Integrator w/Aggregate Event Data, then PUSH to external API 2 `MonitorThem`
+- Integrator w/ individual Patient Record, then PUSH to external API 1 `MyMedicalData`
+- Integrator w/Aggregate Patient Event Data, then PUSH to external API 2 `MonitorThem`
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/connected.png" width=500>
 
