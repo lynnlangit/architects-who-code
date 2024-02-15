@@ -1,12 +1,12 @@
 # US Hospital Info
 
-## Stats
+## Hopsital Stats
 
 - 6,100 US Hospitals
 - Average beds/hosptial is 130
 - 2% (122) have over 500 beds
 
-## Patient Monitoring Systems
+## Patient Monitoring Systems in Use
 
 1. Philips IntelliVue Series:
     - Philips is a well-known name in healthcare technology, and their IntelliVue series offers a comprehensive range of patient monitoring solutions.
