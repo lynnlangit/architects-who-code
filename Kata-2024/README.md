@@ -5,7 +5,7 @@ Architectural Kata activity - Feb/Mar 2024.
 ## Information about this Kata Challenge
 - PROBLEM STATEMENTS: Timely patient status is vital to providing highest quality care, gaps exist in the market.
   - Nurses must be 'in-room' to gather patient monitoring information. Aggregate patient dashboards have latencies, inaccuracies or are non-existant.
-  - Doctors need get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
+  - Doctors need to get patient monitor status for abnormal states rapidly. Abnormal Rating Alerts, when available, have excess latency and downtime.
   - IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
 - GOAL: Design `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
   - display current hospital patient information input from 8 devices for max 500 patients per installation
