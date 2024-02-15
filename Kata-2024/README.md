@@ -45,7 +45,7 @@ SOLUTION THREE: Integration Applications
 ### Solution Components
 
 Components shown in GREEN currently exist, those shown in RED will be built for the `MonitorMe` application.
-- See ADRs for detail --> https://github.com/lynnlangit/architects-who-code/tree/main/Kata-2024/ADRs
+- See ADRs (linked below) for detail  
 - Event types for patient device status data are these: monitor, record, analyze, viz and/or alert
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
