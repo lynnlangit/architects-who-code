@@ -7,13 +7,13 @@ Timely patient status is vital to providing highest quality care, **gaps exist**
 1. Nurses need to **monitor up to 20 patients from their station**
    - Currently they must be 'in-room' to gather patient monitoring information from [individual patient dashboards](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/devices.md)
    - Aggregate patient dashboards at nurse's stations have latencies, inaccuracies or are non-existant
-   - [nurse user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#nurses)
+   - 👨‍⚕️ [nurse user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#nurses)
 2. Doctors need to get **patient monitor status for abnormal states rapidly**
    - Abnormal rating alerts, when available, have excess latency and downtime
-   - [doctor user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#doctors)
+   - 👩🏻‍⚕️ [doctor user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#doctors)
 3. IT needs to get **monitor down status notifications rapidly**
    - Downtime system alerts have excess latency and are unreliable
-   - [IT user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#it--system-maintainers)
+   - 🧑‍💻 [IT user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#it--system-maintainers)
     
 ### GOAL: 
 Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` and existing in-room patient devices / individual patient monitors.  
