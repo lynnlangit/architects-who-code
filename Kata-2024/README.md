@@ -39,7 +39,7 @@ Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-
    
 ### Solution Components
 
-Components shown in GREEN current exist, those shown in RED will be built for the `MonitorMe` application.
+Components shown in GREEN currently exist, those shown in RED will be built for the `MonitorMe` application.
  - Process to capture patient device status event data --> (monitor, record, analyze, viz and/or alert)
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/components.png" width=800>
