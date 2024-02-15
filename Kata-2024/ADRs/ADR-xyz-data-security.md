@@ -19,3 +19,4 @@ In order to secure data both at at rest and in transit, we need an approach to s
 ## Consequences: 
 - The cost of setting up and maintaining a dedicated patient information network (in addition to the regular hosptial network for non-patient information) must be included in the budget.
 - Encryption key rotation policies must be designed, performed and enforced via Organizational policy.
+- We may chose to pay for a commercial event database (Aerospike) vs open source (Redis) as the former includes encryption at rest by default.  For the latter there is significant technical work needed to set up and maintain this capability.
