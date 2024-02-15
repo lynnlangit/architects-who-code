@@ -20,7 +20,7 @@ Design new `MonitorMe` application to work with w/two existing cloud SaaS produc
   - PERFORMANT near real-time, minimal latency
   - AVAILABLE always on (HA if any of 8 devices fails, keep going with others)
   - LOCAL install on premises, no cloud
-  - THRESHOLD-BASED ALERTING Alert/Notify - via issue, thresholds (including calculated for awake or asleeep), push to mobile & monitors (Doctors on phones, Nurses to dashboards)
+  - THRESHOLD-BASED ALERTING Alert/Notify - via issue, thresholds & conditionals, push to mobile & monitors (Doctors on phones, Nurses to dashboards)
   - QUERYABLE generate on-demand snapshots, filter on time/vital signs, keep 24 hr history
   - FLEXIBLE built for easy extensibility - change, growth, new devices...
   - COMPLETE serves and stores information, software and hardware solution
