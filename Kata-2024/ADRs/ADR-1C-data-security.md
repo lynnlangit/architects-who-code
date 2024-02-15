@@ -1,4 +1,4 @@
-# XYZ / Data Security
+# 1C / Data Security
 
 WIP determining data security. Will use to figure out hardware/storage constraints/requirements
 

@@ -1,4 +1,4 @@
-# XYZ / Service Availability
+# 2B / Service Availability
 
 WIP determining service availability. Will use to figure out hardware/storage constraints/requirements
 

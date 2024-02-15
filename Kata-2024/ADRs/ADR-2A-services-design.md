@@ -1,4 +1,4 @@
-# XYZ / Service Design
+# 2A / Service Design
 
 WIP determining service design. Will use to figure out service requirements from components
 

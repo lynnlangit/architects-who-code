@@ -1,6 +1,16 @@
-# Bilities / Requirements
+# 0 Required `Bilities
 
-## SOLUTION REQUIREMENTS:
+WIP capturing stated application requirements. Will use to select and map to application `bilities`
+
+Current estimation: Translate and Assign to 3 parts of solution design.
+
+## Status: 
+WIP
+
+## Context: 
+Given solution requirements captured from the scenario provided, shown below.
+
+### SOLUTION REQUIREMENTS:
   - ACCURATE data is extremely important, vital!
   - SECURE data but *NOT* HIPPA / GDPR
   - PERFORMANT near real-time, minimal latency
@@ -12,46 +22,51 @@
   - COMPLETE serves and stores information, software and hardware solution
   - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
 
-----
+## Decision
+`Bility prioritization based on state reqruirements by application.
 
-## HOT Dashboard
+### 1. For Nurse's Dashboard / Alert System for Doctors & IT
 
-### A
+#### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
 - Availability - redunandcy
-- Performance
+- Performance - HOT data, extremely low latency
 - Security
-### B
+#### B Priority
 - Scalability
 - Elasticity
 - Deployability
 
 ---
 
-## WARM Integration w/Saas & Snapshots
+### 2.  Integration w/Saas & Snapshots
 
-### A
+#### A Priority
 - Accuracy / Reliability - correctness and minimum latency (SLOs)
 - Security - to/from cloud
 - Availability - redunandcy
 
-### B
-- Performance
+#### B Priority
+- Performance - WARM data, 24 hour latency
 - Scalability
 - Elasticity
 - Deployability
 
 ----
 
-## COOL Growth / Future
+###  3. Growth / Future Application Features
 
-### A
+#### A Priority
 - Accuracy / Reliability
 - Security
 - Deployability
 - Elasticity / Flexibility - new devices
 
-### B
+#### B Priority
 - Availability
-- Performance
+- Performance - COOL data, use de-identified / dummy patient data for dev / test
 - Scalability
+
+## Consequences
+Must iterate and re-rank prioritization as more information is discovered during design phases of this project.
+
