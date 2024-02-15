@@ -9,9 +9,14 @@ WIP
 
 ## Context: 
 In order meet latency requirements, we need to use the fastest possible database as backing for our Dashboard application and associated Alert application.
-Our dev team has previously succesfully built applications on MySQL.  They do not have experience with event-based or time-series databases.
+Our dev team has previously succesfully built applications on MySQL.  They do not have experience with event-based or time-series databases. Applications requirements include high availability and strong data encryption.
 
 ## Decision: 
+
+We compared features of several databases.  See summary table below.
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/compare-db.png" width=800>
+
 - Use event-based in-memory database for core applications to meet latency requirements
 - Test open-source (Redis) and commercial (Aerospike) event databases. Possibly test commerical (InfluxDB) time-series database.
 - Use relational database (MySQL) for intermediate storage and transformation before pushing to downstream databases (FIHR) and data services 
