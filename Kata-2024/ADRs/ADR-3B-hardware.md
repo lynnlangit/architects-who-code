@@ -1,4 +1,4 @@
-# 3A / Hardware
+# 3B / Hardware
 
 WIP determining production environment. Will use to figure out minimum new hardware constraints/requirements
 
