@@ -2,7 +2,7 @@
 
 Architectural Kata activity `MonitorMe` application - Feb/Mar 2024. 
 
-### CURRENT STATE/CHALLENGES: 
+### CURRENT STATE / CHALLENGES: 
 Hospital nurses and doctors need timely patient status in order to provide the highest quality patient care. Several **gaps exist** in the current US hospital market.  The first step in designing and building a new solution is to address these gaps by considering the [current hospital state](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/hospitals.md) and challenges faced by medical professionals and those who support them.
 1. Nurses need to **monitor up to 20 patients at a time from their nurse's station**
    - Currently they must be 'in-room' to gather patient monitoring information from [individual patient dashboards](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/devices.md)
