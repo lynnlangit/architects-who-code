@@ -21,5 +21,7 @@ In order to make develop, test and deploy this solution, we need to assign 3 FT 
 
 ## Considerations / Questions:
 - Solution will run on newly purchased hardware, would like dev env to emmulate as closely as possible, i.e. OS, drivers...
-- Use more modern coding language for better performance given solution latency requirements? i.e Rust lang - downside is that this would be new to our devs and would require training
+- Use more modern coding language for better performance given solution latency requirements? i.e Rust lang - downside is that this would be new to our devs and would require training. Summary grid of programming language considerations shown below.
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/dev-langauges.png" width=800>
 
