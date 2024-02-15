@@ -9,7 +9,7 @@ Timely patient status is vital to providing highest quality care, **gaps exist**
 3. IT needs to get monitor down status notifications rapidly. Downtime System Alerts have excess latency and are unreliable.
     
 ### GOAL: 
-Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` 
+Design new `MonitorMe` application to work with w/two existing cloud SaaS products `MonitorThem` and `MyMedicalData` and existing in-room patient devices / individual patient monitors.  
 1. Display current hospital patient information input from 8 patients devices for max 500 patients per installation 
 2. Create patient information dashboards (per 20 patients max) per nurse with minimal latency
 3. Create alerts for doctors (abnormal patient device readings), create alert for IT (dashboard down)
