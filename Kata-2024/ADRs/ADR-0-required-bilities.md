@@ -23,7 +23,7 @@ Given solution requirements captured from the scenario provided, shown below.
   - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
 
 ## Decision
-`Bility prioritization based on state reqruirements by application.
+`Bility prioritization based on stated requirements by application.  There are 3 applications in this solution.  
 
 ### 1. For Nurse's Dashboard / Alert System for Doctors & IT
 
