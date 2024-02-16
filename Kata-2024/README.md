@@ -1,6 +1,6 @@
 # Information for O'Reilly Kata
 
-Architectural Kata activity `MonitorMe` application - Feb/Mar 2024. 
+Architectural Kata activity `MonitorMe` application challenge - Feb/Mar 2024. 
 
 ### CURRENT STATE / CHALLENGES: 
 Hospital nurses and doctors need timely patient status in order to provide the highest quality patient care. Several **gaps exist** in the current US hospital market.  The first step in designing and building a new solution is to address these gaps by considering [current US hospital statistics](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/hospitals.md). Understanding challenges faced by medical professionals and those who support them in providing top quality hospital patient care the best starting point for this design process.
