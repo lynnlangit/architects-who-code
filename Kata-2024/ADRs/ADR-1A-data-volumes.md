@@ -2,7 +2,7 @@
 
 WIP determining data volume and storage. Will use to figure out hardware/storage constraints/requirements.
 
-Current estimation: ![estimated data volumes](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/2024-Kata-data-volumes.png)
+Current estimation: ![estimated data volumes](../images/2024-Kata-data-volumes.png)
 
 ## Status: 
 WIP
@@ -15,7 +15,7 @@ Our dev team has previously succesfully built applications on MySQL.  They do no
 
 We compared features of several databases.  See summary table below.
 
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/compare-db.png" width=800>
+<img src="../images/compare-db.png" width=800>
 
 - Use event-based in-memory database for core applications to meet latency requirements
 - Test open-source (Redis) and commercial (Aerospike) event databases. Possibly test commerical (InfluxDB) time-series database.

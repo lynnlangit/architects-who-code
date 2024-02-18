@@ -4,7 +4,7 @@ WIP determining production environment. Will use to figure out minimum new hardw
 
 Current estimation: Purchase new servers, appropriately sized, as shown in green areas on diagram below.
 
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/hardware.png" width=800>
+<img src="../images/hardware.png" width=800>
 
 ## Status: 
 WIP
