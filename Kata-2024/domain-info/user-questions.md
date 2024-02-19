@@ -3,6 +3,8 @@
 ## For Nurses
 
 - How do you monitor patient's when you are not in their hospital room currently?
+- How do you identify patients: name, room #, bed #, monitoring station #, ...?
+  - Example: setting up nursing station: selecting which patients to monitor
 - What works well for this scenario currently?
 - What does not work for this scenario currrently?
 - What do you think of this image (our solution concept)?
