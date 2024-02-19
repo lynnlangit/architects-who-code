@@ -12,7 +12,7 @@ Given solution requirements captured from the scenario provided, shown below.
 
 ### SOLUTION REQUIREMENTS:
   - ACCURATE data is extremely important, vital!
-  - SECURE data but *NOT* HIPPA / GDPR
+  - SECURE data but *NOT* HIPAA / GDPR
   - PERFORMANT near real-time, minimal latency
   - AVAILABLE always on (HA if any of 8 devices fails, keep going with others)
   - LOCAL install on premises, no cloud
