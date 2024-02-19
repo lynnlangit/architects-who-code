@@ -14,4 +14,4 @@ Using this model, we modeled queue depth by various processing rates. Results in
 
 Example: processing 500 patients of data, at 2000 points per second:
 
-![500 patients at 2000 points per second](../images/queue-depth-500pt-2000-per-s.png)
+![500 patients at 2000 points per second](../images/queue-depth-500pt-2200-per-s.png)
