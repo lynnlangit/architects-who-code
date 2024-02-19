@@ -1,0 +1,186 @@
+<InsightMakerModel>
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <Setting Note="" Version="37" TimeLength="3700" TimeStart="0" TimeStep="0.5" TimeUnits="Seconds" Units="" SolutionAlgorithm="RK1" BackgroundColor="white" Throttle="-1" Macros="" SensitivityPrimitives="" SensitivityRuns="50" SensitivityBounds="50, 80, 95, 100" SensitivityShowRuns="false" StyleSheet="{}" id="2">
+      <mxCell parent="1" vertex="1" visible="0">
+        <mxGeometry x="20" y="20" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Setting>
+    <Display name="Default Display" Note="" Type="Time Series" xAxis="Time (%u)" yAxis="Queue depth" Primitives="133" AutoAddPrimitives="true" ScatterplotOrder="X Primitive, Y Primitive" Image="Display" yAxis2="" Primitives2="" showMarkers="false" showLines="true" showArea="false" legendPosition="Automatic" yAxisMax="1800" id="3">
+      <mxCell style="roundImage;image=/builder/images/DisplayFull.png;" parent="1" vertex="1" visible="0">
+        <mxGeometry x="50" y="20" width="64" height="64" as="geometry" />
+      </mxCell>
+    </Display>
+    <Stock name="Queue depth" Note="" InitialValue="0" StockMode="Conveyor" Delay="0.1" Volume="100" NonNegative="true" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" oldId="133" id="133">
+      <mxCell style="stock" vertex="1" parent="1">
+        <mxGeometry x="480" y="430" width="150" height="50" as="geometry" />
+      </mxCell>
+    </Stock>
+    <Flow name="Heart readings" Note="" FlowRate="IfThenElse((Seconds() mod 1 == 0), 2*[Number of patients], 0)" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="134" id="134">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="300" y="520" as="sourcePoint" />
+          <mxPoint x="310" y="380" as="targetPoint" />
+          <Array as="points" />
+          <mxPoint x="-100" y="63" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="Message processing rate" Note="" FlowRate="1103" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="5000" SliderMin="0" SliderStep="" oldId="135" id="135">
+      <mxCell style="flow" edge="1" source="133" target="152" parent="1">
+        <mxGeometry x="-180" y="70" width="100" height="100" as="geometry">
+          <mxPoint x="-180" y="170" as="sourcePoint" />
+          <mxPoint x="170" y="580" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="BP readings" Note="" FlowRate="IfThenElse((Seconds() mod (60*60) == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="136" id="136">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="300" y="380" as="sourcePoint" />
+          <mxPoint x="230" y="240" as="targetPoint" />
+          <mxPoint x="-100" y="-67" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="O2 readings" Note="" FlowRate="IfThenElse((Seconds() mod 5 == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="137" id="137">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="410" y="260" as="sourcePoint" />
+          <mxPoint x="230" y="285" as="targetPoint" />
+          <mxPoint x="-25" y="-127" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="Blood sugar readings" Note="" FlowRate="IfThenElse((Seconds() mod 5 == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="138" id="138">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="520" y="250" as="sourcePoint" />
+          <mxPoint x="250" y="340" as="targetPoint" />
+          <mxPoint x="-10" y="40" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="Respiration readings" Note="" FlowRate="IfThenElse((Seconds() mod 1 == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="139" id="139">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="590" y="240" as="sourcePoint" />
+          <mxPoint x="150" y="315" as="targetPoint" />
+          <Array as="points" />
+          <mxPoint x="20" y="45" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="ECG readings" Note="" FlowRate="IfThenElse((Seconds() mod (1) == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="140" id="140">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="720" y="260" as="sourcePoint" />
+          <mxPoint x="80" y="355" as="targetPoint" />
+          <mxPoint x="55" y="-117" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="Body Temp readings" Note="" FlowRate="IfThenElse((Seconds() mod (5*60) == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="141" id="141">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="290" y="145" width="100" height="100" as="geometry">
+          <mxPoint x="830" y="370" as="sourcePoint" />
+          <mxPoint x="440" y="595" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Flow name="Sleep readings" Note="" FlowRate="IfThenElse((Seconds() mod (2*60) == 0), 1*[Number of patients], 0)\n" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" oldId="142" id="142">
+      <mxCell style="flow" edge="1" target="133" parent="1">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="830" y="520" as="sourcePoint" />
+          <mxPoint x="200" y="630" as="targetPoint" />
+          <mxPoint x="100" y="73" as="offset" />
+        </mxGeometry>
+      </mxCell>
+    </Flow>
+    <Variable name="Number of patients" Note="" Equation="500" Units="Unitless" MaxConstraintUsed="true" MinConstraintUsed="true" MaxConstraint="500" MinConstraint="0" ShowSlider="true" SliderMax="500" SliderMin="0" SliderStep="" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" oldId="143" id="143">
+      <mxCell style="variable" vertex="1" parent="1">
+        <mxGeometry x="495" y="80" width="120" height="70" as="geometry" />
+      </mxCell>
+    </Variable>
+    <Link name="Link" Note="" BiDirectional="false" oldId="144" id="144">
+      <mxCell style="link" edge="1" source="143" target="138" parent="1">
+        <mxGeometry x="-330" y="-170" width="100" height="100" as="geometry">
+          <mxPoint x="-330" y="-70" as="sourcePoint" />
+          <mxPoint x="-230" y="-170" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Link name="Link" Note="" BiDirectional="false" oldId="149" id="149">
+      <mxCell style="link" edge="1" source="143" target="137" parent="1">
+        <mxGeometry x="-420" y="-229.73" width="100" height="100" as="geometry">
+          <mxPoint x="-420" y="-129.73" as="sourcePoint" />
+          <mxPoint x="-320" y="-229.73" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Link name="Link" Note="" BiDirectional="false" oldId="150" id="150">
+      <mxCell style="link" edge="1" source="157" target="136" parent="1">
+        <mxGeometry x="-330" y="-170" width="100" height="100" as="geometry">
+          <mxPoint x="-330" y="-70" as="sourcePoint" />
+          <mxPoint x="-230" y="-170" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Link name="Link" Note="" BiDirectional="false" oldId="151" id="151">
+      <mxCell style="link" edge="1" source="157" target="134" parent="1">
+        <mxGeometry x="-250.19" y="-199.1" width="100" height="100" as="geometry">
+          <mxPoint x="-250.19" y="-99.1" as="sourcePoint" />
+          <mxPoint x="-150.19" y="-199.1" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Stock name="Processed messages" Note="" InitialValue="0" StockMode="Store" Delay="10" Volume="100" NonNegative="true" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="100" SliderMin="0" SliderStep="" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" oldId="152" id="152">
+      <mxCell style="stock" vertex="1" parent="1">
+        <mxGeometry x="480" y="670" width="150" height="50" as="geometry" />
+      </mxCell>
+    </Stock>
+    <Ghost Source="143" oldId="153" name="Number of patients" id="153">
+      <mxCell style="variable;opacity=30;" vertex="1" parent="1">
+        <mxGeometry x="880" y="420" width="120" height="70" as="geometry" />
+      </mxCell>
+    </Ghost>
+    <Link name="Link" Note="" BiDirectional="false" oldId="154" id="154">
+      <mxCell style="link" edge="1" parent="1" source="153" target="141">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="120" y="-20" as="sourcePoint" />
+          <mxPoint x="220" y="-120" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Link name="Link" Note="" BiDirectional="false" oldId="155" id="155">
+      <mxCell style="link" edge="1" parent="1" source="153" target="142">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="120" y="-20" as="sourcePoint" />
+          <mxPoint x="220" y="-120" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Ghost Source="143" oldId="157" name="Number of patients" id="157">
+      <mxCell style="variable;opacity=30;" vertex="1" parent="1">
+        <mxGeometry x="140" y="420" width="120" height="70" as="geometry" />
+      </mxCell>
+    </Ghost>
+    <Link name="Link" Note="" BiDirectional="false" oldId="158" id="158">
+      <mxCell style="link" edge="1" parent="1" source="143" target="139">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="120" y="-20" as="sourcePoint" />
+          <mxPoint x="220" y="-120" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+    <Link name="Link" Note="" BiDirectional="false" oldId="160" id="160">
+      <mxCell style="link" edge="1" parent="1" source="143" target="140">
+        <mxGeometry x="120" y="-120" width="100" height="100" as="geometry">
+          <mxPoint x="120" y="-20" as="sourcePoint" />
+          <mxPoint x="220" y="-120" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </Link>
+  </root>
+</InsightMakerModel>
