@@ -2,8 +2,8 @@
 
 ## Nurses
 
-Patient monitoring dashboard at nurses station.  Each nurse monitors 20 patients. Dashboard cycles per patient.
-Many updates to this user story after conducting a Nurse interview --> https://www.youtube.com/watch?v=3mDUZpnXJJ4
+Patient monitoring dashboard at nurses station.  Each nurse monitors 20 patients. Dashboard cycles per patient.  
+IMPORTANT: Many updates to this user story after conducting a Nurse interview --> https://www.youtube.com/watch?v=3mDUZpnXJJ4
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/users-nurses.png" width=800>
 
