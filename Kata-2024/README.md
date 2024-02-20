@@ -18,7 +18,7 @@ Hospital nurses and doctors need timely patient status in order to provide the h
     
 ### GOAL: 
 Design new `MonitorMe` applications to work with **existing in-room patient devices / individual patient monitors** deployed in US Hospitals.  Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-0-required-bilities.md#solution-requirements) and associated ranked solution capabilties.
-1. Create patient information DASHBOARD application (per 20 patients max) per nurse with minimal latency which displays current hospital patient information input from 8 patients devices for max 500 patients per installation
+1. Create ALERT application for nurses from patient information DASHBOARD application (per 20 patients max) per nurse with minimal latency which displays current hospital patient information input from 8 patients devices for max 500 patients per installation
 2. Create ALERT application for doctors (abnormal patient device readings), create alerts for IT (dashboard down)
 3. Create INTEGRATION application to prepare (transform) and push patient data to existing cloud-based SaaS Products (`MonitorThem` and `MyMedicalData`)
 
