@@ -4,10 +4,11 @@ Architectural Kata activity `MonitorMe` application challenge - Feb/Mar 2024.
 
 ### CURRENT STATE / CHALLENGES: 
 Hospital nurses and doctors need timely patient status in order to provide the highest quality patient care. Several **gaps exist** in the current US hospital market.  The first step in designing and building a new solution is to address these gaps by considering [current US hospital statistics](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/hospitals.md). Understanding challenges faced by medical professionals and those who support them in providing top quality hospital patient care the best starting point for this design process.
-1. Nurses need to **monitor key metrics from up to 20 patients at a time from their nurse's station** via aggregate dashboards
+1. Nurses need to be immediately alerted to key pateient metrics from an aggregate patient monitoring system at the nurse's station while in any location in the hospital.
    - Currently they must be 'in-room' to gather patient monitoring information from [individual patient dashboards](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/devices.md)
    - Aggregate patient dashboards at nurse's stations have latencies, inaccuracies or are non-existant
-   - 👨‍⚕️ [nurse user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#nurses)
+   - Wearable alert devices do not yet exist for nurses
+   - 👨‍⚕️ [nurse user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#nurses) and [nurse-interview](https://www.youtube.com/watch?v=3mDUZpnXJJ4)
 2. Doctors need to get **patient monitor status for abnormal states rapidly** via timely, relevant alerts.
    - Abnormal rating alerts, when available, have excess latency, downtime & aren't always focused on key patient metrics, resulting in alert fatigue.
    - 👩🏻‍⚕️ [doctor user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#doctors)
@@ -23,16 +24,23 @@ Design new `MonitorMe` applications to work with **existing in-room patient devi
 
     
 ---
- 
-## Solution Concept 1: Nurse's Patient Info Dashboard
 
-SOLUTION ONE: Visual Dashboard (concept shown below) for nurses 
+## Solution Concept 1a: Nurse's Alert Device
+
+SOLUTION ONE-A: Alert device (concept shown below) for nurses 
+- Shows info from key patient alerts on monitoring device for up to 5 patients  
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-alert.png" width=500>
+
+## Solution Concept 1b: Central Patient Info Dashboard
+
+SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel 
 - Shows monitoring info per patient, info changes to next patient every 5 seconds
-- Shows info from 8 patient monitoring devices for up to 20 patients per nurse dashboard     
+- Shows info from 8 patient monitoring devices for up to 20 patients per aggregate dashboard     
 
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>" width=600>
 
-## Solution Concept 2 : Doctor's Patient Info Mobile Alerts
+## Solution Concept 2: Doctor's Patient Info Mobile Alerts
    
 SOLUTION TWO: Alert Systems for Doctors and IT Professionals  
 - Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
@@ -40,7 +48,7 @@ SOLUTION TWO: Alert Systems for Doctors and IT Professionals
 
 <img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/doctor-alert.png" width=500>
 
-## Solution Concept 3 : Integration with SaaS Applications
+## Solution Concept 3: Integration with SaaS Applications
 SOLUTION THREE: Integration Applications
 - Integrator w/ individual Patient Record, then PUSH to external API 1 `MyMedicalData`
 - Integrator w/Aggregate Patient Event Data, then PUSH to external API 2 `MonitorThem`
