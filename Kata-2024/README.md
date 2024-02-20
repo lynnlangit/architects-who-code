@@ -15,12 +15,17 @@ Hospital nurses and doctors need timely patient status in order to provide the h
 3. IT needs to get **monitor down status notifications rapidly** via timely, relevant alerts.
    - Downtime system alerts have excess latency, are unreliable & aren't always focused on key system metrics, resulting in alert fatigue.
    - 🧑‍💻 [IT user-story](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/domain-info/user-stories.md#it--system-maintainers)
+
+----
     
 ### GOAL: 
+
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/logo.png" width=200 align=left>
+
 Design new `MonitorMe` applications to work with **existing in-room patient devices / individual patient monitors** deployed in US Hospitals.  Additional [Solution Requirements](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-0-required-bilities.md#solution-requirements) and associated ranked solution capabilties.
-1. Create ALERT application for nurses from patient information DASHBOARD application (per 20 patients max) per nurse with minimal latency which displays current hospital patient information input from 8 patients devices for max 500 patients per installation
-2. Create ALERT application for doctors (abnormal patient device readings), create alerts for IT (dashboard down)
-3. Create INTEGRATION application to prepare (transform) and push patient data to existing cloud-based SaaS Products (`MonitorThem` and `MyMedicalData`)
+1. Create ALERT app for nurses from patient information DASHBOARD application (per 20 patients max) per nurse with minimal latency which displays current hospital patient information input from 8 patients devices for max 500 patients per installation
+2. Create ALERT app for doctors (abnormal patient device readings), create alerts for IT (dashboard down)
+3. Create INTEGRATION app to prepare (transform)/push patient data to existing cloud-based SaaS Products (`MonitorThem` and `MyMedicalData`)
 
     
 ---
