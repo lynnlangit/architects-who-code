@@ -39,7 +39,8 @@ SOLUTION ONE-A: Alert device (concept shown below) for nurses
 
 ## Solution Concept 1b: Central Patient Info Dashboard
 
-SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel. IMPORTANT: Monitoring team may or may not be nurses. 
+SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel.  
+**IMPORTANT: Monitoring team may or may not be nurses.** 
 - Shows monitoring info per patient, info changes to next patient every 5 seconds
 - Shows info from 8 patient monitoring devices for up to 20 patients per aggregate dashboard     
 
