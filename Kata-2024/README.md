@@ -44,7 +44,7 @@ SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel.
 - Shows monitoring info per patient, info changes to next patient every 5 seconds
 - Shows info from 8 patient monitoring devices for up to 20 patients per aggregate dashboard     
 
-<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>" width=600>
+<img src="https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/images/nurse-dashboard.png" width=600>" 
 
 ## Solution Concept 2: Doctor's Patient Info Mobile Alerts
    
