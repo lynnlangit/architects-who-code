@@ -54,6 +54,7 @@ Rack servers: ~$52,200
   * Specs: 2 16-core CPUs, 2x 32GB RAM, dual 800W power
 * Power usage: 14,400W at full draw
   * 9 servers * 1,600W per server
+  * I don't know if we need the full dual power for the dual 800W power supplies, or if the 2nd only runs if the 1st is dead
 
 RAID: $?
 
