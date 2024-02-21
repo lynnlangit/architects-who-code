@@ -2,7 +2,9 @@
 
 WIP determining service design. Will use to figure out service requirements from components
 
-Current estimation: Design microservices using event storming model.  
+Current estimation: a cluster of service workers each run asynchronous stream readers. Broker takes care of (re)distributing messages across active clients.
+
+![service layout](../images/services-layout.png)
 
 ## Status: 
 WIP
