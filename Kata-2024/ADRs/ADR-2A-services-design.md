@@ -2,7 +2,18 @@
 
 WIP determining service design. Will use to figure out service requirements from components
 
-Current estimation: a cluster of service workers each run asynchronous stream readers. Broker takes care of (re)distributing messages across active clients.
+The MonitorMe services implement the following components:
+
+![components overview](../images/components.png)
+
+There are 4 categories of components here:
+
+- real-time messages (data store)
+- SQL database (data store)
+- event-driven service workers (business logic)
+- front-ends & clients
+
+This ADR covers the services. (WIP high level overview)
 
 ![service layout](../images/services-layout.png)
 
