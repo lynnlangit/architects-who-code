@@ -55,17 +55,36 @@ MonitorMe is a distributed system, integrating with hundreds or even thousands o
 
 <img src="../images/in-room-monitor.png" width="300">
 
-While some business logic is fairly static (example: the HL7 health data standard), other aspects of our solution are dynamic. Despite standardization, medical devices & monitoring stations all have their quirks. The sensor devices change as technology evolves. Our understanding of the customer will evolve. The customer's business processes will also evolve.
+While some business logic is fairly static (example: the HL7 health data standard), other aspects of our solution are dynamic. Despite data standardization, medical devices & monitoring stations all have their quirks (example: different polling rates or APIs). We predict these areas to evolve:
 
-As such, it's important 
+- the sensors will change as technology evolves and new devices are deployed.
+- we'll understand the customer better, for example we'll likely want to deliver smarter alerts using AI.
+- the customer's business processes change with their IT needs, for example they may deploy a different electronic health records system.
 
-This ADR covers the services. (WIP high level overview)
+To support this evolution we need modular software components and deployables. Updates must be easy for both MonitorMe developers & operators, requiring zero down-time.
 
-![service layout](../images/services-layout.png)
+Furthermore, the system is highly asynchronous. Patients come and go, vital sensors are put on and taken off. Connections are established and lost as patients are moved around the hospital. But these events have very small payloads (example: a heartbeat sensor update). The system should process available work as quickly as possible, without blocking on future work.
+
+#### Alerting business logic
+
+Alerting logic & policies are so important to MonitorMe that they deserve their own section.
+
+Customer research (eg. nurse interview) tells us alert fatigue is a major problem. Systems alert too often, or incorrectly, or to the wrong person. Hospitals typically have sensor techs or medical assistants who handle the first alert triage, such as replacing a finger clip.
+
+Alerts delivered in a vaccuum aren't helpful, for example "heart rate alert!" is less helpful than including the data trend or better yet an interpretation of that trend. Also, one patient's data going missing is likely an issue with the patient or the room, whereas a whole group of patients going offline might be a system issue requiring an IT alert.
+
+While we want to roll out a basic version soon, we believe machine learning & AI will play a vital role in tuning alerting. Not only during detection (e.g. identifying abnormal trends) but also in the alerting (e.g. when to re-alert or escalate if no acknowledgment received).
+
+### Application server & clients
+
+...
 
 ## Decision: 
 
 The dev team has successfully designed multiple previous applications using microservices approaches.   
+
+![service layout](../images/services-layout.png)
+
 - Queues - throttle 
 - Fetch - get data
 - Disply - create viz
