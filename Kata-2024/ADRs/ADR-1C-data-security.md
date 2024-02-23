@@ -1,17 +1,18 @@
 # 1C / Data Security
 
-WIP determining data security. Will use to figure out hardware/storage constraints/requirements
+Determining data security. Will use to figure out hardware/storage constraints/requirements
 
 Current estimation: Apply encryption to all patient data at rest and in transit
 
 ## Status: 
-WIP
+Reviewed, updated, design applied to hardware configuration.  See ADR for Hardware for more detail.
 
 ## Context: 
 In order to secure data both at at rest and in transit, we need a comprehensive approach to securing patient data end-to-end.
 
 ## Decision: 
-- At rest - encrypt in all data storage location using internal KMS
+Implement the following standard enterprise security measures to each application component:
+- At rest - encrypt in all data storage location using internally-hosted CA/KMS
 - In transit - encrypt traffic on the wire using TLS 1.2+, HTTPS required for Dashboards
 - Access control - each system (databases, services) to be configured to use strong authorization and authentication
 - Network Boundaries - route via dedicated internal patient data network, physically separate from other networks, not connected to any external network, including public internet
@@ -26,4 +27,4 @@ In order to secure data both at at rest and in transit, we need a comprehensive 
 
 ## Considerations:
 - Most hospitals do have internal user/service directory systems (i.e. Active Directory, ...)
-- Most hospitals do NOT have KMS infrastructure/servers.
+- Most hospitals do NOT have existing CA/KMS infrastructure/servers for data encryption.  Our solution will have to include this functionality, both hardware and software. Also key rotation policies.
