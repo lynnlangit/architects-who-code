@@ -55,7 +55,7 @@ SOLUTION 1B: Visual Dashboard (concept shown below) for monitoring personnel, co
 
 <img src="images/doctor-alert.png" width=200 align=left>
 
-## Solution Concept 2a & b: Mobile Alerts - Patient Info for Doctors and System Status for IT
+## Solution Concept 2A & B: Mobile Alerts - Patient Info for Doctors and System Status for IT
 
 SOLUTION TWO: Alert Systems for Doctors and IT Professionals. Doctors to get patient monitor status for defined key alerts. IT to get system down alerts.  
 - Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below) as Alert Type A
