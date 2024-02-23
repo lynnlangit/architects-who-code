@@ -1,19 +1,20 @@
 # 3B / Hardware
 
-WIP determining production environment. Will use to figure out minimum new hardware constraints/requirements
+Determining production environment. Will use to figure out minimum new hardware constraints/requirements
 
-Current estimation: Purchase new servers, appropriately sized, as shown in green areas on diagram below.
+Current estimation: Purchase new servers, appropriately sized, as shown in green areas on diagram below.   
+*Notes: This is a conceptual hardware diagram, see diagram in `Server Rack` section for more detail. Also, due to updated requirements, we now plan to purchase wearable devices for nurses in addition to the hardware shown here*
 
 <img src="../images/hardware.png" width=800>
 
 ## Status: 
-WIP
+Reviewed and updated given our decision to use RabbitMQ (rather than an in-memory NoSQL DB), MySQL and to build a number of custom Java services.
 
 ## Context: 
 In order to deploy `MonitorMe` on premise meeting the performance, reliability and security requirements, we select, purchase and deploy a number of new servers to the production environment.
 
 ## Decision: 
-- Database - deploy two, appropriately-sized servers to build a failover database cluster.  Depending on final selection of database, it maybe be neccesary to add to third server (if Redis) at minimum.  Load test and purchase appropirately sized fast disks to meet latency requirements.
+- Database - deploy two, appropriately-sized servers to build a failover RabbitMQ cluster.  Plan to Load test and purchase appropirately sized fast disks to meet latency requirements.
 - Services - deploy two, appropriately-sized compute clusters. Use load balancers for HA.
 - Encryption - deploy lightweight KMS / CA solutions. Deploy root CA and issuing CA.  Consider adding redundancy for HA.
   
