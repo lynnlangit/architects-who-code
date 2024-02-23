@@ -9,7 +9,7 @@ Based on this, the system generates ~24 GB/mo in raw sensor data.
 While this is a lot of data, it is not Really Big Data. For example, this [statsd discussion](https://github.com/statsd/statsd/issues/249) from 2013 references stats instances sending >15k metrics per second to Graphite.
 
 ## Status: 
-WIP
+Reviewed
 
 ## Context: 
 We have two use case categories: **real-time** and **regular**.
@@ -93,7 +93,8 @@ MonitorMe generates data frequently. Following the above assumptions, sensor eve
 
 ## Decision: 
 
-We compared features of several databases.  See summary table below.
+We compared features of several NoSQL (in memory) databases and also queing libraries.  See summary table of potential NoSQL databases below.
+We decided to use RabbitMQ for HOT storage (rather than an in-memory database) along with MySQL for long-term storage.  See services ADRs for details.
 
 <img src="../images/compare-db.png" width=800>
 
