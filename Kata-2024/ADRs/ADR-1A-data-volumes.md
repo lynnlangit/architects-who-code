@@ -9,7 +9,7 @@ Based on this, the system generates ~24 GB/mo in raw sensor data.
 While this is a lot of data, it is not Really Big Data. For example, this [statsd discussion](https://github.com/statsd/statsd/issues/249) from 2013 references stats instances sending >15k metrics per second to Graphite.
 
 ## Status: 
-Reviewed
+Reviewed, updated and intital technologies selected - see `Decision` section of this document for detail.
 
 ## Context: 
 We have two use case categories: **real-time** and **regular**.
