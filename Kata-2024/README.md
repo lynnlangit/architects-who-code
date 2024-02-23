@@ -35,7 +35,7 @@ Design new `MonitorMe` applications to work with **existing in-room patient devi
 SOLUTION ONE-A: Alert device (concept shown below) for nurses 
 - Shows info from key patient alerts on monitoring device for up to 5 patients  
 
-<img src="images/nurse-alert.png" width=500>
+<img src="images/nurse-alert.png" width=400>
 
 ## Solution Concept 1b: Central Patient Info Dashboard
 
@@ -44,7 +44,7 @@ SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel.
 - Shows monitoring info per patient, info changes to next patient every 5 seconds
 - Shows info from 8 patient monitoring devices for up to 20 patients per aggregate dashboard     
 
-<img src="images/nurse-dashboard.png" width=600>
+<img src="images/nurse-dashboard.png" width=500>
 
 ## Solution Concept 2: Doctor's Patient Info Mobile Alerts
 
@@ -52,22 +52,22 @@ SOLUTION TWO: Alert Systems for Doctors and IT Professionals
 - Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
 - Alerts on dashboard application downtime to IT pro's mobile phone
 
-<img src="images/doctor-alert.png" width=500>
+<img src="images/doctor-alert.png" width=400>
 
 ## Solution Concept 3: Integration with SaaS Applications
 SOLUTION THREE: Integration Applications
 - Integrator w/ individual Patient Record, then PUSH to external API 1 `MyMedicalData`
 - Integrator w/Aggregate Patient Event Data, then PUSH to external API 2 `MonitorThem`
 
-<img src="images/connected.png" width=500>
+<img src="images/connected.png" width=400>
 
 ----
 
 ### Solution Components
 
-Components shown in GREEN currently exist, those shown in RED will be built for the `MonitorMe` application.
-- See ADRs (linked below) for detail  
-- Event types for patient device status data are these: monitor, record, analyze, viz and/or alert
+Components shown in diagram below.  GREY are currently existing components, those shown in COLOR will be built for the `MonitorMe` application.  
+- Additional detailed solution diagrams for various pespectives are included in ADRs.
+- List of ADRs is linked below and includes solution details.  
 
 <img src="images/components.png">
 
@@ -88,7 +88,7 @@ Components shown in GREEN currently exist, those shown in RED will be built for 
 
 - David Haley - https://www.linkedin.com/in/davidchaley/
 - Lynn Langit - https://www.linkedin.com/in/lynnlangit/
-- AI Partners - Gemini Advanced + ChatGPT
+- AI Partners - Gemini Pro Advanced + ChatGPT 4.0 + plugins (DALLE and others)
 
 
 
