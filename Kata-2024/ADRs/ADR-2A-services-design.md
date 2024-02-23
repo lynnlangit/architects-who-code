@@ -100,26 +100,34 @@ We should consider our client frameworks carefully. It would be costly to mainta
 ## Decision: 
 
 - Real-time data: RabbitMQ cluster with several queues (vitals, alerts, jobs, etc.)
+
+  - [ADR-2D-1: Data: **Messaging queue**](ADR-2D-1-data-messaging.md)
+
 - Long-term data: MySQL cluster
-- Service components: Docker containers running as standard daemons
-- Client apps: Ionic w/ React
-  - While Ionic can target Apple & Android wearables, we should consult our Design team whether we can use a single responsive app, or a dedicated watch app
+
+  - [ADR-2D-2: Data: **SQL database**](ADR-2D-2-data-sql.md)
+
+- Service components:
+
+  - **Backends**: Docker containers running as standard daemons
+  - **Client apps**: Ionic w/ React
+
+    - While Ionic can target Apple & Android wearables, we should consult our Design team whether we can use a single responsive app, or a dedicated watch app
+
+  - [ADR-2C-1: Services: **Real-time vitals**](ADR-2C-1-realtime-vitals.md)
+
+    [ADR-2C-2: Services: **Real-time alerts**](ADR-2C-2-realtime-alerts.md)
+
+    [ADR-2C-3: Services: **App server**](ADR-2C-3-app-server.md)
+
+    [ADR-2C-4: Services: **App clients**](ADR-2C-4-app-clients.md)
+
+    [ADR-2C-5: Services: **Long-term data**](ADR-2C-5-longterm-data.md)
+
+    [ADR-2C-6: Services: **Data export**](ADR-2C-6-data-export.md)
+
 
 ![service layout](../images/services-highlevel.png)
-
-Rather than provide component service details all at once, we consider each in turn.
-
-[ADR-2C-1: Services: **Real-time vitals**](ADR-2C-1-realtime-vitals.md)
-
-[ADR-2C-2: Services: **Real-time alerts**](ADR-2C-2-realtime-alerts.md)
-
-[ADR-2C-3: Services: **App server**](ADR-2C-3-app-server.md)
-
-[ADR-2C-4: Services: **App clients**](ADR-2C-4-app-clients.md)
-
-[ADR-2C-5: Services: **Long-term data**](ADR-2C-5-longterm-data.md)
-
-[ADR-2C-6: Services: **Data export**](ADR-2C-6-data-export.md)
 
 ## Consequences: 
 - The cost of designing, coding, testing, deploying and maintaining multiple services must be included in the budget.
