@@ -1,6 +1,6 @@
 # 1A / Data Volumes
 
-WIP determining data volume and storage. Will use to figure out hardware/storage constraints/requirements.
+Determining data volume and storage. Will use to figure out hardware/storage constraints/requirements.
 
 Aggregate traffic estimation: ![estimated data volumes](../images/2024-Kata-data-volumes.png)
 
@@ -93,7 +93,7 @@ MonitorMe generates data frequently. Following the above assumptions, sensor eve
 
 ## Decision: 
 
-We compared features of several NoSQL (in memory) databases and also queing libraries.  See summary table of potential NoSQL databases below.
+We compared features of several NoSQL (in memory) databases and also queues.  See summary table of potential NoSQL databases below.
 **We decided to use RabbitMQ for HOT storage (rather than an in-memory database) along with MySQL for long-term storage.  See services ADRs for details.**
 
 <img src="../images/compare-db.png" width=800>
