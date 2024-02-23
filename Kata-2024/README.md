@@ -46,11 +46,11 @@ SOLUTION ONE-B: Visual Dashboard (concept shown below) for monitoring personnel.
 
 <img src="images/nurse-dashboard.png" width=500>
 
-## Solution Concept 2: Doctor's Patient Info Mobile Alerts
+## Solution Concept 2a & b: Doctor's Patient Info Mobile Alerts
 
 SOLUTION TWO: Alert Systems for Doctors and IT Professionals  
-- Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below)
-- Alerts on dashboard application downtime to IT pro's mobile phone
+- Alerts on defined/customizable patient device thresholds to doctors mobile phone (concept shown below) as Alert Type A
+- Alerts on dashboard application downtime to IT pro's mobile phone as Alert Type B
 
 <img src="images/doctor-alert.png" width=400>
 
