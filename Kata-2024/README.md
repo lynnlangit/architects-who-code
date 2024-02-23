@@ -51,7 +51,7 @@ SOLUTION 1B: Visual Dashboard (concept shown below) for monitoring personnel, co
 - Shows monitoring info per patient, info changes to next patient every 5 seconds
 - Shows info from 8 patient monitoring devices for up to 20 patients per aggregate dashboard
   
----    
+---
 
 <img src="images/doctor-alert.png" width=200 align=left>
 
@@ -89,6 +89,18 @@ Components shown in diagram below. DARK GREY are currently existing components, 
 - [ADR-1C:DATA - Review security baseline and consider database types and features for data security](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-1C-data-security.md)
 - [ADR-2A:SERVICES - Review component baseline and consider service design pattern options](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-2A-services-design.md)
 - [ADR-2B:SERVICES - Review component availability and consider service design pattern options](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-2B-services-availability.md)
+- ADR-2C SERVICES:
+  - [ADR-2C-1: Consider Component #1: Real-time vitals](ADRs/ADR-2C-1-realtime-vitals.md)
+  - [ADR-2C-2: Consider Component #2: Real-time alerts](ADRs/ADR-2C-2-realtime-alerts.md)
+  - [ADR-2C-3: Consider Component #3: App server](ADRs/ADR-2C-3-app-server.md)
+  - [ADR-2C-4: Consider Component #4: App clients](ADRs/ADR-2C-4-app-clients.md)
+  - [ADR-2C-5: Consider Component #5: Long-term patient data](ADRs/ADR-2C-5-longterm-data.md)
+  - [ADR-2C-6: Consider Component #6: Patient data export](ADRs/ADR-2C-6-data-export.md)
+
+- ADR-2D DATA:
+  - [ADR-2D-1: Consider real-time messaging](ADRs/ADR-2D-1-data-messaging-queues.md)
+  - [ADR-2D-2: Consider SQL database](ADRs/ADR-2D-2-data-sql.md)
+
 - [ADR-3A:ENV - Review dev environment and team capabilties and consider language, tools and patterns](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-3A-dev-env.md)
 - [ADR-3B:ENV - Review physical environment and plan for required new hardware](https://github.com/lynnlangit/architects-who-code/blob/main/Kata-2024/ADRs/ADR-3B-hardware.md)
 
