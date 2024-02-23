@@ -14,9 +14,12 @@ Reviewed and updated given our decision to use RabbitMQ (rather than an in-memor
 In order to deploy `MonitorMe` on premise meeting the performance, reliability and security requirements, we select, purchase and deploy a number of new servers to the production environment.
 
 ## Decision: 
+Purchase and configure appropriately-sized hardware to support the solutions components listed below.  See `Server Rack Specs & Cost` section for detail.
 - Database - deploy two, appropriately-sized servers to build a failover RabbitMQ cluster.  Plan to Load test and purchase appropirately sized fast disks to meet latency requirements.
 - Services - deploy two, appropriately-sized compute clusters. Use load balancers for HA.
 - Encryption - deploy lightweight KMS / CA solutions. Deploy root CA and issuing CA.  Consider adding redundancy for HA.
+
+*NOTES: Due to newly surfaced requirement to include a wearble for nurses, we'll start by buying and coding for programable watches, such as [this one](https://www.amazon.com/SmartFly-info-ESP32-Based-Programmable-MicroPython/dp/B08LKGS2CF?th=1).  Eventually, we may chose to prototype a custom hardward solution, possibly by working with prototyping partners such as [this one](https://www.lkkerscm.com/) in Shenzhen, China.*
   
 ## Consequences: 
 - Time to select, order, receive, setup and configure new hardware may impact project schedule.
@@ -27,7 +30,7 @@ In order to deploy `MonitorMe` on premise meeting the performance, reliability a
 - Ideal form factor is easy to transport, set up, and maintain. Commodity hardware is preferred whenever possible as it's easier to service & replace.
 - Power redundancy is an important consideration, but UPS units are modular: easy to include, or provide separately.
 
-## Server rack specs & cost
+## Server Rack Specs & Cost
 
 The entire MonitorMe backend, including power backup, can fit in a single server rack with some room to grow. Without power backup, space & cost requirements go down considerably.
 
