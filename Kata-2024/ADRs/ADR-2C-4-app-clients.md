@@ -1,6 +1,6 @@
 # 2C-4 / Service: application clients
 
-🚧 Error: time ran short.
+🚧 Error: time ran short for detailed diagram.
 
 The client use cases:
 
@@ -13,6 +13,7 @@ The client use cases:
 The clients are straightforward in many respects. Here are the important parts:
 
 - websocket / persistent connection to receive real-time updates from the server.
+- clients receive historial data by fetching from the database via app server.
 - regular CRUD/REST API for other operations.
 - Ioniq, or similar, framework to target multiple devices.
 - Might require specialized app for wearable device form factor; check with Design team.
