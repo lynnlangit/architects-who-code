@@ -32,7 +32,7 @@ The sensor reader worker performs the following loop:
 - Collapse by device & dedupe sensors
 - For each device, launch async call:
   - poll the device for requested sensors
-  - write response to vitals stream.
+  - write sensor's datum to the **vitals stream**.
   - consume message from **device update queue**
 
 #### Concerns
