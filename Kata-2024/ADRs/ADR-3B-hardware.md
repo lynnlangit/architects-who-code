@@ -19,7 +19,7 @@ Purchase and configure appropriately-sized hardware to support the solutions com
 - Services - deploy two, appropriately-sized compute clusters. Use load balancers for HA.
 - Encryption - deploy lightweight KMS / CA solutions. Deploy root CA and issuing CA.  Consider adding redundancy for HA.
 
-*NOTES: Due to newly surfaced requirement to include a wearble for nurses, we'll start by buying and coding for programable watches, such as [this one](https://www.amazon.com/SmartFly-info-ESP32-Based-Programmable-MicroPython/dp/B08LKGS2CF?th=1).  Eventually, we may chose to prototype a custom hardward solution, possibly by working with prototyping partners such as [this one](https://www.lkkerscm.com/) in Shenzhen, China.*
+*NOTES: Due to newly surfaced requirement to include a **wearble device** for nurses, we'll start by buying and coding for programable watches, such as [this one](https://www.amazon.com/SmartFly-info-ESP32-Based-Programmable-MicroPython/dp/B08LKGS2CF?th=1).  Eventually, we may chose to prototype a custom hardward solution, possibly by working with prototyping partners such as [this one](https://www.lkkerscm.com/) in Shenzhen, China.*
   
 ## Consequences: 
 - Time to select, order, receive, setup and configure new hardware may impact project schedule.
