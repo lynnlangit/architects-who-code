@@ -1,6 +1,6 @@
 # 0 Solution Requirements & Capabiilities
 
-WIP capturing stated application requirements. Will use to select and map to application `bilities`.  
+Capturing stated application requirements. Will use to select and map to application `bilities`.  
 Current estimation: Translate and Assign to 3 parts of solution design.
 
 ## Status: 
@@ -22,8 +22,8 @@ Given solution requirements captured from the scenario provided, shown below.
   - INTEROPERABLE with two SaaS data services - on Cloud in California region, via secure HTTP API calls
 
 ## Decision
-`Bility prioritization based on stated requirements by application.    
-There are 3 applications in this solution.  Building applications that can grow flexibly is also a requirement.  
+Apply abilities prioritization based on stated requirements to each part of the solution (applications).    
+There are 3 applications in this solution.   
 
 ### Applications 1 & 2. For Nurse's Dashboard / Alert System for Doctors & IT
 
