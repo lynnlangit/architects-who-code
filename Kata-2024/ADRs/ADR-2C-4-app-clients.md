@@ -1,8 +1,6 @@
 # 2C-4 / Service: application clients
 
-🚧
-
-Error: time ran short.
+🚧 Error: time ran short.
 
 The client use cases:
 
