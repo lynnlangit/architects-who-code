@@ -94,7 +94,7 @@ MonitorMe generates data frequently. Following the above assumptions, sensor eve
 ## Decision: 
 
 We compared features of several NoSQL (in memory) databases and also queing libraries.  See summary table of potential NoSQL databases below.
-We decided to use RabbitMQ for HOT storage (rather than an in-memory database) along with MySQL for long-term storage.  See services ADRs for details.
+**We decided to use RabbitMQ for HOT storage (rather than an in-memory database) along with MySQL for long-term storage.  See services ADRs for details.**
 
 <img src="../images/compare-db.png" width=800>
 
