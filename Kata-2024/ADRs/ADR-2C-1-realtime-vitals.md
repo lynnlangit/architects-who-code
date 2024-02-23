@@ -18,7 +18,7 @@ The poll scheduler worker is a clock loop:
 - Enqueue ready sensors to the **device update queue**
 - Wait 500ms (adjust for time spent in loop)
 
-It obtains devices & their schedules from the database. To refresh configuration, the operator simply restarts the worker container. As long as one worker is online, polls will be scheduled.
+It obtains devices & their schedules from the database. To refresh configuration, the operator simply restarts the worker. As long as one worker is online, polls will be scheduled.
 
 #### Concerns
 
@@ -38,4 +38,4 @@ The sensor reader worker performs the following loop:
 #### Concerns
 
 - **Batch size tuning**. We'll need to benchmark which [consumer prefetch](https://www.rabbitmq.com/docs/consumer-prefetch), aka batch size, gives us the best performance. We could start with 10.
-- **Read time**. How quickly do the patient monitoring devices return data? Is it realistic to expect a response every 500ms? If they're slow, 
+- **Read time**. How quickly do the patient monitoring devices return data? Is it realistic to expect a response every 500ms? There's no point reading it as fast as we can.
