@@ -96,7 +96,7 @@ MonitorMe generates data frequently. Following the above assumptions, sensor eve
 We compared features of several NoSQL (in memory) databases and also queues.  See summary table of potential NoSQL databases below.
 **We decided to use RabbitMQ for HOT storage (rather than an in-memory database) along with MySQL for long-term storage.  See services ADRs for details.**
 
-<img src="../images/compare-db.png" width=800>
+<img src="../images/compare-db.png" width=600>
 
 - Use event-based in-memory database for core applications to meet latency requirements
 - Test open-source (Redis) and commercial (Aerospike) event databases. Possibly test commerical (InfluxDB) time-series database.
