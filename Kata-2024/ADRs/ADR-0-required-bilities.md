@@ -1,6 +1,6 @@
 # 0 Solution Requirements & Capabiilities
 
-WIP capturing stated application requirements. Will use to select and map to application `bilities`
+WIP capturing stated application requirements. Will use to select and map to application `bilities`.  
 Current estimation: Translate and Assign to 3 parts of solution design.
 
 ## Status: 
