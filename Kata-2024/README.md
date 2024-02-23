@@ -65,7 +65,7 @@ SOLUTION THREE: Integration Applications
 
 ### Solution Components
 
-Components shown in diagram below.  GREY are currently existing components, the SIX components shown inside the grey box will be built for the `MonitorMe` application.  
+Components shown in diagram below. DARK GREY are currently existing components, the SIX components shown inside the light grey box will be built for the `MonitorMe` application.  
 - Additional detailed solution diagrams for various pespectives are included in ADRs.
 - List of ADRs is linked below and includes solution details.  
 
